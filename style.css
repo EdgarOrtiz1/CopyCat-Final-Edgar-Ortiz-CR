@@ -26,15 +26,39 @@ main {
     flex-grow: 5;
   }
   
-  aside, nav {
-    background-color: var(--dusty-emerald);
+nav {
+    background-color: black;
     flex-grow: 2;
+    display: inline-flex;
+}
+    h2 {
+      text-align: left;
+    }
+    h3{
+      text-align: right;
+    }
+
+img{
+    width: 50%;
+    z-index: 0;
+    position: relative;
   }
-  
-  footer, header {
-    background-color: var(--sage);
+footer {
+    background-color: none;
     flex-grow: 1;
-  }                             
+  }  
+header {
+    background-color: turquoise;
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    z-index: 1;
+  }
+    header > button {
+   display: flex;
+    }  
+
+                        
   @media (min-width: 600px) {
     .container {
       flex-direction: row;
